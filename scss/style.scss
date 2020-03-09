@@ -1,0 +1,93 @@
+$second-color: #979797;
+
+body {
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  color: #fff;
+}
+
+.green-stripe {
+  height: 5px;
+  background: #76c38f;
+}
+
+.section-1 {
+  background: #290000;
+
+
+  .navbar-light .navbar-brand span {
+    &:first-child {
+      font-size: 28px;
+      color: #fff;
+    }
+
+    &:last-child {
+      font-size: 11px;
+      color: $second-color;
+    }
+
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 11px;
+  }
+
+  .navbar-light .navbar-nav .nav-item:hover {
+    background-color: #76c38f;
+    border-radius: 10px;
+  }
+
+  .carousel__title {
+    margin-top: 130px;
+  }
+
+  //.owl-carousel {
+  //  .carousel__title {
+  //    font-size: 46px;
+  //    font-weight: 400;
+  //  }
+  //}
+
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("../img/section-1/Left-arrow.png");
+    height: 28px;
+    width: 15px;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("../img/section-1/Right-arrow.png");
+    height: 28px;
+    width: 15px;
+  }
+
+  .circle {
+    height: 380px;
+    width: 380px;
+    border: 26px #6b6b6b solid;
+    border-radius: 50%;
+    margin: 34px 0 50px 67px;
+    background-color: #333;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center
+  }
+
+  .circle span {
+    display: inline-block;
+  }
+
+}
+
+
+
+
