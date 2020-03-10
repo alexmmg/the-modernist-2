@@ -48,3 +48,38 @@ body {
     justify-content: center; }
   .section-1 .circle span {
     display: inline-block; }
+
+.section-2 {
+  background-color: #660000; }
+  .section-2 .services .service__block {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 21px 33px;
+    max-width: 260px;
+    transition: 0.2s ease-in-out; }
+    .section-2 .services .service__block .service__img {
+      background: url("http://dummyimage.com/120") no-repeat; }
+    .section-2 .services .service__block .service__title {
+      color: #333;
+      font-size: 32px;
+      margin: 17px 0 24px; }
+    .section-2 .services .service__block .service__text {
+      font-size: 12px;
+      line-height: 16.8px;
+      color: #979797;
+      margin: 0; }
+    .section-2 .services .service__block:hover {
+      background-color: #76c38f; }
+      .section-2 .services .service__block:hover .service__title, .section-2 .services .service__block:hover .service__text {
+        color: #fff; }
+  .section-2 .work .work__line {
+    background-color: #303030;
+    height: 3px; }
+  .section-2 .work .latest-work {
+    width: 256px;
+    height: 48px;
+    display: table-cell;
+    background-color: #303030;
+    vertical-align: middle; }

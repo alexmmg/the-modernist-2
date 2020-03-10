@@ -1,4 +1,5 @@
 $second-color: #979797;
+$work-color: #303030;
 
 body {
   font-family: Raleway, sans-serif;
@@ -47,13 +48,6 @@ body {
     margin-top: 130px;
   }
 
-  //.owl-carousel {
-  //  .carousel__title {
-  //    font-size: 46px;
-  //    font-weight: 400;
-  //  }
-  //}
-
   .carousel-control-prev, .carousel-control-next {
     width: 5%;
   }
@@ -87,6 +81,64 @@ body {
   }
 
 }
+
+.section-2 {
+  background-color: #660000;
+
+  .services {
+
+    .service__block {
+      margin-top: 60px;
+      margin-bottom: 40px;
+      background-color: #fff;
+      cursor: pointer;
+      padding: 21px 33px;
+      max-width: 260px;
+      transition: 0.2s ease-in-out;
+
+      .service__img {
+        background: url("http://dummyimage.com/120") no-repeat;
+      }
+
+      .service__title {
+        color: #333;
+        font-size: 32px;
+        margin: 17px 0 24px;
+      }
+
+      .service__text {
+        font-size: 12px;
+        line-height: 16.8px;
+        color: $second-color;
+        margin: 0;
+      }
+
+      &:hover {
+        background-color: #76c38f;
+
+        .service__title, .service__text {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .work {
+    .work__line {
+      background-color: $work-color;
+      height: 3px;
+    }
+
+    .latest-work {
+      width: 256px;
+      height: 48px;
+      display:  table-cell;
+      background-color: $work-color;
+      vertical-align: middle;
+    }
+  }
+}
+
 
 
 
