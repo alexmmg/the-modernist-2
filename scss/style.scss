@@ -124,17 +124,28 @@ body {
   }
 
   .work {
+    .work_inner {
+      min-width: 100px;
+      min-height: 30px;
+    }
+
     .work__line {
       background-color: $work-color;
       height: 3px;
     }
 
+    .work__center {
+      position: absolute;
+      left: 50%;
+    }
+
     .latest-work {
       width: 256px;
       height: 48px;
-      display:  table-cell;
+      display: table-cell;
       background-color: $work-color;
       vertical-align: middle;
+      text-align: center;
     }
   }
 }
