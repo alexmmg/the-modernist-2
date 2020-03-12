@@ -60,7 +60,10 @@ body {
     max-width: 260px;
     transition: 0.2s ease-in-out; }
     .section-2 .services .service__block .service__img {
-      background: url("http://dummyimage.com/120") no-repeat; }
+      background: url("https://dummyimage.com/120x120/333/fff.jpg");
+      display: inline-block;
+      width: 120px;
+      height: 120px; }
     .section-2 .services .service__block .service__title {
       color: #333;
       font-size: 32px;
@@ -72,21 +75,54 @@ body {
       margin: 0; }
     .section-2 .services .service__block:hover {
       background-color: #76c38f; }
+      .section-2 .services .service__block:hover .service__img {
+        background: url("https://dummyimage.com/120x120/fff/000333.jpg"); }
       .section-2 .services .service__block:hover .service__title, .section-2 .services .service__block:hover .service__text {
         color: #fff; }
   .section-2 .work .work_inner {
-    min-width: 100px;
-    min-height: 30px; }
+    width: 1000px;
+    height: 48px;
+    position: relative; }
   .section-2 .work .work__line {
     background-color: #303030;
-    height: 3px; }
+    height: 3px;
+    margin-top: 22px; }
   .section-2 .work .work__center {
     position: absolute;
-    left: 50%; }
-  .section-2 .work .latest-work {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     width: 256px;
-    height: 48px;
+    height: 48px; }
+  .section-2 .work .latest-work {
     display: table-cell;
     background-color: #303030;
     vertical-align: middle;
-    text-align: center; }
+    text-align: center;
+    width: 256px;
+    height: 48px;
+    font-size: 32px;
+    border-radius: 5px; }
+  .section-2 .work__wrapper {
+    margin: 30px 0 0; }
+    .section-2 .work__wrapper .work-item {
+      border: #fff 5px solid;
+      width: 300px;
+      height: 200px;
+      background: #353535;
+      align-items: center;
+      justify-content: center; }
+      .section-2 .work__wrapper .work-item .work-item__img {
+        display: inline-block;
+        font-size: 18px; }
+      .section-2 .work__wrapper .work-item .work-item__name {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        display: inline-block;
+        height: 30px;
+        background-color: #000000;
+        font-size: 14px; }
