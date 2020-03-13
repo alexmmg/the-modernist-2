@@ -106,7 +106,7 @@ body {
     font-size: 32px;
     border-radius: 5px; }
   .section-2 .work__wrapper {
-    margin: 30px 0 0; }
+    margin-top: 30px; }
     .section-2 .work__wrapper .work-item {
       border: #fff 5px solid;
       width: 300px;
@@ -114,9 +114,12 @@ body {
       background: #353535;
       align-items: center;
       justify-content: center; }
+      .section-2 .work__wrapper .work-item:hover .work-item__name {
+        z-index: -1; }
       .section-2 .work__wrapper .work-item .work-item__img {
         display: inline-block;
-        font-size: 18px; }
+        font-size: 18px;
+        vertical-align: middle; }
       .section-2 .work__wrapper .work-item .work-item__name {
         bottom: 0;
         left: 0;
@@ -125,4 +128,62 @@ body {
         display: inline-block;
         height: 30px;
         background-color: #000000;
-        font-size: 14px; }
+        font-size: 14px;
+        transition-delay: 0.5s; }
+    .section-2 .work__wrapper:last-child {
+      padding-bottom: 60px; }
+
+.section-3 {
+  background-color: #303030;
+  border-bottom: #000 1px solid; }
+  .section-3 .footer__title {
+    font-size: 16px;
+    margin: 40px 0 30px; }
+  .section-3 .blog {
+    padding-left: 0; }
+    .section-3 .blog .blog__title {
+      color: #76c38f;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px; }
+    .section-3 .blog .blog__author {
+      font-size: 10px;
+      color: #76c38f;
+      margin-bottom: 12px; }
+      .section-3 .blog .blog__author span {
+        color: #666;
+        cursor: pointer; }
+    .section-3 .blog .blog__date {
+      color: #979797;
+      font-size: 10px; }
+    .section-3 .blog .blog__text {
+      color: #979797;
+      font-size: 13px; }
+    .section-3 .blog .blog__more {
+      color: #76c38f;
+      cursor: pointer; }
+  .section-3 .footer__table {
+    line-height: 34.5px;
+    width: 225px;
+    cursor: pointer; }
+    .section-3 .footer__table td {
+      border-bottom: 1px solid #404040;
+      color: #76c38f; }
+      .section-3 .footer__table td span {
+        font-size: 5px;
+        vertical-align: middle;
+        color: #979797; }
+  .section-3 .twitter p {
+    color: #979797;
+    line-height: 20.8px;
+    margin-bottom: 25px; }
+    .section-3 .twitter p span {
+      color: #76c38f;
+      cursor: pointer; }
+
+.section-4 {
+  background-color: #303030;
+  border-top: #3a3a3a 1px solid;
+  color: #979797; }
+  .section-4 .row > div {
+    padding: 20px 0; }

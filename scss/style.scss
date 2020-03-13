@@ -1,5 +1,6 @@
 $second-color: #979797;
 $work-color: #303030;
+$green-color: #76c38f;
 
 body {
   font-family: Raleway, sans-serif;
@@ -127,6 +128,7 @@ body {
           color: #fff;
         }
       }
+
     }
   }
 
@@ -167,10 +169,7 @@ body {
   }
 
   .work__wrapper {
-
-
-      margin: 30px 0 0;
-
+    margin-top: 30px;
 
     .work-item {
       border: #fff 5px solid;
@@ -180,9 +179,15 @@ body {
       align-items: center;
       justify-content: center;
 
+
+      &:hover .work-item__name {
+        z-index: -1;
+      }
+
       .work-item__img {
         display: inline-block;
         font-size: 18px;
+        vertical-align: middle;
       }
 
       .work-item__name {
@@ -194,12 +199,102 @@ body {
         height: 30px;
         background-color: #000000;
         font-size: 14px;
-      }
-
-      &:hover {
-
+        transition-delay: 0.5s;
       }
     }
+
+    &:last-child {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.section-3 {
+  background-color: #303030;
+  border-bottom: #000 1px solid;
+
+  .footer__title {
+    font-size: 16px;
+    margin: 40px 0 30px;
+  }
+
+  .blog {
+    padding-left: 0;
+
+    .blog__title {
+      color: $green-color;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .blog__author {
+      font-size: 10px;
+      color: $green-color;
+      margin-bottom: 12px;
+
+      span {
+        color: #666;
+        cursor: pointer;
+      }
+    }
+
+    .blog__date {
+      color: $second-color;
+      font-size: 10px;
+
+    }
+
+    .blog__text {
+      color: $second-color;
+      font-size: 13px;
+    }
+
+    .blog__more {
+      color: $green-color;
+      cursor: pointer;
+    }
+  }
+
+  .footer__table {
+    line-height: 34.5px;
+    width: 225px;
+    cursor: pointer;
+
+    td {
+      border-bottom: 1px solid #404040;
+      color: $green-color;
+
+      span {
+        font-size: 5px;
+        vertical-align: middle;
+        color: $second-color;
+      }
+    }
+  }
+
+  .twitter {
+    p {
+      color: $second-color;
+      line-height: 20.8px;
+      margin-bottom: 25px;
+
+
+      span {
+        color: $green-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.section-4 {
+  background-color: #303030;
+  border-top: #3a3a3a 1px solid;
+  color: $second-color;
+
+  .row > div {
+    padding: 20px 0;
   }
 }
 
