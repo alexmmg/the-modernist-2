@@ -49,18 +49,19 @@ body {
     margin-top: 130px;
   }
 
+
   .carousel-control-prev, .carousel-control-next {
     width: 5%;
   }
 
   .carousel-control-prev-icon {
-    background-image: url("../img/section-1/Left-arrow.png");
+    background-image: url("../../img/section-1/Left-arrow.png");
     height: 28px;
     width: 15px;
   }
 
   .carousel-control-next-icon {
-    background-image: url("../img/section-1/Right-arrow.png");
+    background-image: url("../../img/section-1/Right-arrow.png");
     height: 28px;
     width: 15px;
   }
@@ -178,7 +179,7 @@ body {
       background: #353535;
       align-items: center;
       justify-content: center;
-
+      transition: z-index 1s;
 
       &:hover .work-item__name {
         z-index: -1;
@@ -188,6 +189,7 @@ body {
         display: inline-block;
         font-size: 18px;
         vertical-align: middle;
+        transition: z-index 1s;
       }
 
       .work-item__name {
@@ -199,7 +201,7 @@ body {
         height: 30px;
         background-color: #000000;
         font-size: 14px;
-        transition-delay: 0.5s;
+        transition: transform 0.4s;
       }
     }
 
@@ -302,3 +304,10 @@ body {
 
 
 
+
+@media (max-width: 992px) {
+  .carousel-item .col-lg-6 {
+    text-align: -webkit-center;
+  }
+
+}

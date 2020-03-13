@@ -29,11 +29,11 @@ body {
   .section-1 .carousel-control-prev, .section-1 .carousel-control-next {
     width: 5%; }
   .section-1 .carousel-control-prev-icon {
-    background-image: url("../img/section-1/Left-arrow.png");
+    background-image: url("../../img/section-1/Left-arrow.png");
     height: 28px;
     width: 15px; }
   .section-1 .carousel-control-next-icon {
-    background-image: url("../img/section-1/Right-arrow.png");
+    background-image: url("../../img/section-1/Right-arrow.png");
     height: 28px;
     width: 15px; }
   .section-1 .circle {
@@ -113,13 +113,15 @@ body {
       height: 200px;
       background: #353535;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      transition: z-index 1s; }
       .section-2 .work__wrapper .work-item:hover .work-item__name {
         z-index: -1; }
       .section-2 .work__wrapper .work-item .work-item__img {
         display: inline-block;
         font-size: 18px;
-        vertical-align: middle; }
+        vertical-align: middle;
+        transition: z-index 1s; }
       .section-2 .work__wrapper .work-item .work-item__name {
         bottom: 0;
         left: 0;
@@ -129,7 +131,7 @@ body {
         height: 30px;
         background-color: #000000;
         font-size: 14px;
-        transition-delay: 0.5s; }
+        transition: transform 0.4s; }
     .section-2 .work__wrapper:last-child {
       padding-bottom: 60px; }
 
@@ -187,3 +189,7 @@ body {
   color: #979797; }
   .section-4 .row > div {
     padding: 20px 0; }
+
+@media (max-width: 992px) {
+  .carousel-item .col-lg-6 {
+    text-align: -webkit-center; } }
