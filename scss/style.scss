@@ -13,6 +13,10 @@ body {
   background: #76c38f;
 }
 
+
+//******************Section 1********************************
+
+
 .section-1 {
   background: #290000;
 
@@ -27,7 +31,6 @@ body {
       font-size: 11px;
       color: $second-color;
     }
-
   }
 
   .navbar {
@@ -49,6 +52,32 @@ body {
     margin-top: 130px;
   }
 
+  .carousel__text {
+    margin-bottom: 20px;
+  }
+
+  .carousel__button {
+    display: inline-block;
+    width: 142px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: $green-color;
+    text-align: center;
+    padding-top: 7px;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #54a56e;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 13px;
+      line-height: 15.6px;
+    }
+  }
 
   .carousel-control-prev, .carousel-control-next {
     width: 5%;
@@ -84,8 +113,34 @@ body {
 
 }
 
+
+//***********************Section 2************************************
+
+
 .section-2 {
   background-color: #660000;
+
+
+  //#nature-gallery {
+  //  height: 1000px;
+  //  background-color: #636277;
+  //  padding: 10px;
+  //}
+  //
+  //.gallery-item {
+  //  flex: 1 0 25%;
+  //  max-width: 220px;
+  //  border: 1px solid #ebeaea;
+  //  background-color: #fff;
+  //  padding: 2px;
+  //  margin: 2px;
+  //  transition: .6s
+  //}
+  //
+  //.gallery-item img {
+  //  max-width: 100%;
+  //}
+
 
   .services {
 
@@ -95,8 +150,8 @@ body {
       background-color: #fff;
       cursor: pointer;
       padding: 21px 33px;
-      max-width: 260px;
-      transition: 0.2s ease-in-out;
+      transition: .4s;
+
 
       .service__img {
         background: url("https://dummyimage.com/120x120/333/fff.jpg");
@@ -132,6 +187,10 @@ body {
 
     }
   }
+
+
+  //***********************Work blocks************************************
+
 
   .work {
     .work_inner {
@@ -174,22 +233,17 @@ body {
 
     .work-item {
       border: #fff 5px solid;
-      width: 300px;
+      width: 30%;
       height: 200px;
       background: #353535;
       align-items: center;
       justify-content: center;
-      transition: z-index 1s;
-
-      &:hover .work-item__name {
-        z-index: -1;
-      }
+      margin: 15px 0;
 
       .work-item__img {
         display: inline-block;
         font-size: 18px;
         vertical-align: middle;
-        transition: z-index 1s;
       }
 
       .work-item__name {
@@ -201,7 +255,7 @@ body {
         height: 30px;
         background-color: #000000;
         font-size: 14px;
-        transition: transform 0.4s;
+        transition: .5s;
       }
     }
 
@@ -288,7 +342,44 @@ body {
       }
     }
   }
+
+  .form__col {
+    padding-right: 0;
+
+    .form {
+      margin-bottom: 40px;
+
+      .form-control {
+        color: $second-color;
+        font-size: 13px;
+        line-height: 15.6px;
+        background-color: #222;
+        border: 0;
+        resize: none;
+
+        &:focus {
+          border-color: $green-color;
+          box-shadow: 0 0 0 0.1rem rgb(118, 195, 143);
+        }
+
+      }
+
+      .btn-primary {
+        background-color: $green-color;
+        border-color: $green-color;
+
+        &:hover {
+          background-color: #54a56e;
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 0.2rem #06ad3c;
+        }
+      }
+    }
+  }
 }
+
 
 .section-4 {
   background-color: #303030;
@@ -301,13 +392,56 @@ body {
 }
 
 
+//**********************@media*************************************************
 
+@media (max-width: 1200px) {
 
-
+}
 
 @media (max-width: 992px) {
+
+  .navbar-light .navbar-toggler {
+    outline-color: $green-color;
+  }
+
   .carousel-item .col-lg-6 {
     text-align: -webkit-center;
   }
+  .navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+  }
 
+  .section-2 .work__wrapper .work-item {
+    width: 43%;
+  }
+
+  .table__col {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
 }
+
+@media (max-width: 576px) {
+  .carousel__button {
+    margin-bottom: 50px;
+  }
+
+  .section-2 .work__wrapper .work-item {
+    width: 78%;
+    margin: 15px;
+  }
+
+  .table__col {
+    padding-left: 15px;
+  }
+
+  .section-4 .row > div {
+    padding-left: 15px;
+  }
+}
+
+
+
+
+
+
