@@ -220,6 +220,14 @@ body {
       align-items: center;
       justify-content: center;
       margin: 15px 0;
+      transition: .5s;
+
+      &:hover {
+
+        .work-item__name {
+          z-index: -1;
+        }
+      }
 
       .work-item__img {
         display: inline-block;
