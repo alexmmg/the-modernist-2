@@ -18,9 +18,6 @@ function watch() {
     gulp.watch('./scss/**/*.scss', style);
 }
 
-// function defaultTask(cb) {
-//     cb();
-// }
 
 exports.style = style;
 exports.watch = watch;

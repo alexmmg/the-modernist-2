@@ -60,7 +60,7 @@ body {
     width: 380px;
     border: 26px #6b6b6b solid;
     border-radius: 50%;
-    margin: 34px 0 50px 67px;
+    margin: 34px 20px 50px 33px;
     background-color: #333;
     font-size: 28px;
     align-items: center;
@@ -77,11 +77,17 @@ body {
     cursor: pointer;
     padding: 21px 33px;
     transition: .4s; }
-    .section-2 .services .service__block .service__img {
-      background: url("https://dummyimage.com/120x120/333/fff.jpg");
-      display: inline-block;
+    .section-2 .services .service__block .wrap_img {
+      display: flex;
+      background-color: #333;
       width: 120px;
-      height: 120px; }
+      height: 120px;
+      margin: auto; }
+      .section-2 .services .service__block .wrap_img .service__img {
+        background-color: #333;
+        font-size: 18px;
+        align-items: center;
+        margin: auto; }
     .section-2 .services .service__block .service__title {
       color: #333;
       font-size: 32px;
@@ -93,8 +99,9 @@ body {
       margin: 0; }
     .section-2 .services .service__block:hover {
       background-color: #76c38f; }
-      .section-2 .services .service__block:hover .service__img {
-        background: url("https://dummyimage.com/120x120/fff/000333.jpg"); }
+      .section-2 .services .service__block:hover .wrap_img, .section-2 .services .service__block:hover .service__img {
+        background-color: #fff;
+        color: #333; }
       .section-2 .services .service__block:hover .service__title, .section-2 .services .service__block:hover .service__text {
         color: #fff; }
   .section-2 .work .work_inner {
@@ -127,7 +134,6 @@ body {
     margin-top: 30px; }
     .section-2 .work__wrapper .work-item {
       border: #fff 5px solid;
-      width: 30%;
       height: 200px;
       background: #353535;
       align-items: center;
@@ -136,10 +142,16 @@ body {
       transition: .5s; }
       .section-2 .work__wrapper .work-item:hover .work-item__name {
         z-index: -1; }
-      .section-2 .work__wrapper .work-item .work-item__img {
-        display: inline-block;
-        font-size: 18px;
-        vertical-align: middle; }
+      .section-2 .work__wrapper .work-item .img__center {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: 100%; }
+        .section-2 .work__wrapper .work-item .img__center .work-item__img {
+          align-items: center;
+          margin: auto;
+          font-size: 18px;
+          vertical-align: middle; }
       .section-2 .work__wrapper .work-item .work-item__name {
         bottom: 0;
         left: 0;
@@ -148,8 +160,7 @@ body {
         display: inline-block;
         height: 30px;
         background-color: #000000;
-        font-size: 14px;
-        transition: .5s; }
+        font-size: 14px; }
     .section-2 .work__wrapper:last-child {
       padding-bottom: 60px; }
 
@@ -159,29 +170,27 @@ body {
   .section-3 .footer__title {
     font-size: 16px;
     margin: 40px 0 30px; }
-  .section-3 .blog {
-    padding-left: 0; }
-    .section-3 .blog .blog__title {
-      color: #76c38f;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 15px; }
-    .section-3 .blog .blog__author {
-      font-size: 10px;
-      color: #76c38f;
-      margin-bottom: 12px; }
-      .section-3 .blog .blog__author span {
-        color: #666;
-        cursor: pointer; }
-    .section-3 .blog .blog__date {
-      color: #979797;
-      font-size: 10px; }
-    .section-3 .blog .blog__text {
-      color: #979797;
-      font-size: 13px; }
-    .section-3 .blog .blog__more {
-      color: #76c38f;
+  .section-3 .blog .blog__title {
+    color: #76c38f;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px; }
+  .section-3 .blog .blog__author {
+    font-size: 10px;
+    color: #76c38f;
+    margin-bottom: 12px; }
+    .section-3 .blog .blog__author span {
+      color: #666;
       cursor: pointer; }
+  .section-3 .blog .blog__date {
+    color: #979797;
+    font-size: 10px; }
+  .section-3 .blog .blog__text {
+    color: #979797;
+    font-size: 13px; }
+  .section-3 .blog .blog__more {
+    color: #76c38f;
+    cursor: pointer; }
   .section-3 .footer__table {
     line-height: 34.5px;
     width: 225px;
@@ -200,27 +209,25 @@ body {
     .section-3 .twitter p span {
       color: #76c38f;
       cursor: pointer; }
-  .section-3 .form__col {
-    padding-right: 0; }
-    .section-3 .form__col .form {
-      margin-bottom: 40px; }
-      .section-3 .form__col .form .form-control {
-        color: #979797;
-        font-size: 13px;
-        line-height: 15.6px;
-        background-color: #222;
-        border: 0;
-        resize: none; }
-        .section-3 .form__col .form .form-control:focus {
-          border-color: #76c38f;
-          box-shadow: 0 0 0 0.1rem #76c38f; }
-      .section-3 .form__col .form .btn-primary {
-        background-color: #76c38f;
-        border-color: #76c38f; }
-        .section-3 .form__col .form .btn-primary:hover {
-          background-color: #54a56e; }
-        .section-3 .form__col .form .btn-primary:focus {
-          box-shadow: 0 0 0 0.2rem #06ad3c; }
+  .section-3 .form__col .form {
+    margin-bottom: 40px; }
+    .section-3 .form__col .form .form-control {
+      color: #979797;
+      font-size: 13px;
+      line-height: 15.6px;
+      background-color: #222;
+      border: 0;
+      resize: none; }
+      .section-3 .form__col .form .form-control:focus {
+        border-color: #76c38f;
+        box-shadow: 0 0 0 0.1rem #76c38f; }
+    .section-3 .form__col .form .btn-primary {
+      background-color: #76c38f;
+      border-color: #76c38f; }
+      .section-3 .form__col .form .btn-primary:hover {
+        background-color: #54a56e; }
+      .section-3 .form__col .form .btn-primary:focus {
+        box-shadow: 0 0 0 0.2rem #06ad3c; }
 
 .section-4 {
   background-color: #303030;
@@ -234,21 +241,23 @@ body {
     outline-color: #76c38f; }
   .carousel-item .col-lg-6 {
     text-align: -webkit-center; }
+  .section-1 .circle {
+    margin: 34px 0 50px; }
   .navbar-light .navbar-toggler-icon {
     filter: invert(1); }
-  .section-2 .work__wrapper .work-item {
-    width: 43%; }
   .table__col {
-    padding-left: 0;
     margin-bottom: 40px; } }
 
 @media (max-width: 576px) {
   .carousel__button {
     margin-bottom: 50px; }
+  .section-2 .services .service__block {
+    margin: 40px 0 30px; }
   .section-2 .work__wrapper .work-item {
-    width: 78%;
-    margin: 15px; }
+    height: 300px; }
   .table__col {
     padding-left: 15px; }
+  .section-3 .form__col {
+    padding-right: 15px; }
   .section-4 .row > div {
     padding-left: 15px; } }

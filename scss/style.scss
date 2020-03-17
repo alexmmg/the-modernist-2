@@ -105,7 +105,7 @@ body {
     width: 380px;
     border: 26px #6b6b6b solid;
     border-radius: 50%;
-    margin: 34px 0 50px 67px;
+    margin: 34px 20px 50px 33px;
     background-color: #333;
     font-size: 28px;
     align-items: center;
@@ -135,11 +135,19 @@ body {
       padding: 21px 33px;
       transition: .4s;
 
-      .service__img {
-        background: url("https://dummyimage.com/120x120/333/fff.jpg");
-        display: inline-block;
+      .wrap_img {
+        display: flex;
+        background-color: #333;
         width: 120px;
         height: 120px;
+        margin: auto;
+
+        .service__img {
+          background-color: #333;
+          font-size: 18px;
+          align-items: center;
+          margin: auto;
+        }
       }
 
       .service__title {
@@ -158,8 +166,9 @@ body {
       &:hover {
         background-color: #76c38f;
 
-        .service__img {
-          background: url("https://dummyimage.com/120x120/fff/000333.jpg");
+        .wrap_img, .service__img {
+          background-color: #fff;
+          color: #333;
         }
 
         .service__title, .service__text {
@@ -214,7 +223,6 @@ body {
 
     .work-item {
       border: #fff 5px solid;
-      width: 30%;
       height: 200px;
       background: #353535;
       align-items: center;
@@ -229,10 +237,18 @@ body {
         }
       }
 
-      .work-item__img {
-        display: inline-block;
-        font-size: 18px;
-        vertical-align: middle;
+      .img__center {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+
+        .work-item__img {
+          align-items: center;
+          margin: auto;
+          font-size: 18px;
+          vertical-align: middle;
+        }
       }
 
       .work-item__name {
@@ -244,7 +260,6 @@ body {
         height: 30px;
         background-color: #000000;
         font-size: 14px;
-        transition: .5s;
       }
     }
 
@@ -271,7 +286,6 @@ body {
   //********Blog block*************
 
   .blog {
-    padding-left: 0;
 
     .blog__title {
       color: $green-color;
@@ -346,7 +360,6 @@ body {
   //********Form block*************
 
   .form__col {
-    padding-right: 0;
 
     .form {
       margin-bottom: 40px;
@@ -409,16 +422,15 @@ body {
     text-align: -webkit-center;
   }
 
+  .section-1 .circle {
+    margin: 34px 0 50px;
+  }
+
   .navbar-light .navbar-toggler-icon {
     filter: invert(1);
   }
 
-  .section-2 .work__wrapper .work-item {
-    width: 43%;
-  }
-
   .table__col {
-    padding-left: 0;
     margin-bottom: 40px;
   }
 }
@@ -430,13 +442,20 @@ body {
     margin-bottom: 50px;
   }
 
+  .section-2 .services .service__block {
+    margin: 40px 0 30px;
+  }
+
   .section-2 .work__wrapper .work-item {
-    width: 78%;
-    margin: 15px;
+    height: 300px;
   }
 
   .table__col {
     padding-left: 15px;
+  }
+
+  .section-3 .form__col {
+    padding-right: 15px;
   }
 
   .section-4 .row > div {
